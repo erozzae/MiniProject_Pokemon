@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import pokemonJSON from "../../data/pokemon.json";
+import PokemonItem from "../PokemonItem/PokemonItem";
 
 function PokemonList() {
   const [pokemons] = useState(pokemonJSON);
@@ -7,7 +8,7 @@ function PokemonList() {
     <div>
       <div className="list-pokemon d-flex flex-wrap justify-content-center gap-3 my-3">
         {pokemons.map((item) => (
-          <h1>{item.name}</h1>
+          <PokemonItem key={item.id} pokemons={item}/>
         ))}
       </div>
     </div>
