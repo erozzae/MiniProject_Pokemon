@@ -1,12 +1,11 @@
 import React from "react";
-import Searchbar from "./components/Searchbar/Searchbar";
 import PokemonList from './components/PokemonList/PokemonList';
+import Searchbar from "./components/Searchbar/Searchbar";
 
 function App() {
   return (
     <div className="d-flex flex-column align-items-center m-5">
-      <Searchbar />
-      <PokemonList/>
+      <Searchbar/>
     </div>
   );
 }
