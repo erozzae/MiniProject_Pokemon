@@ -1,5 +1,6 @@
 import React from "react";
 import { colors } from "../../data/colors";
+import "./PokemonItem.css"
 
 function PokemonItem({ pokemons }) {
   return (
@@ -13,7 +14,7 @@ function PokemonItem({ pokemons }) {
       >
         <img src={pokemons.imageUrl} alt={pokemons.name} />
         <h1>{pokemons.name}</h1>
-        <p className="description">{pokemons.description}</p>
+        <p className="description bg-white position-absolute text-start py-3 px-2">{pokemons.description}</p>
         <div className="types-container d-flex justify-content-center gap-3 mb-2">
           {pokemons.types.map((item, index) => (
             <span
