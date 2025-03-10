@@ -32,11 +32,11 @@ function Searchbar() {
           onChange={handleTyping}
         />
       </div>
-      <div className="plusMinBtn">
+      {/* <div className="plusMinBtn">
         <button onClick={addNumber}>+</button>
         <h2>{Number}</h2>
         <button onClick={substractNumber}>-</button>
-      </div>
+      </div> */}
       <PokemonList words={words}/>
     </div>
   );
